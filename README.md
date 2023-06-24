@@ -5,8 +5,8 @@ A simple command line tool to get weather forecast for a given city. Made using 
 ___
 ### Check Out:
 1. [EXECUTE IN YOUR MACHINE](#execute-in-your-machine)
-2. [ARCHITECTURE DIAGRAM](#architure-diagram)
-3. [GITHUB USECASES](#github-usecases)
+2. [ARCHITECTURE DIAGRAM](#architecture-diagram)
+3. [GITHUB USECASES](#github-use-cases)
 4. [DEMO VIDEO](#demo-video)
 5. [TECH STACK](#tech-stack)
 6. [TEAM](#made-with--by)
@@ -27,6 +27,10 @@ ___
 <br>
 
 ## Architecture Diagram
+
+![architecture diagram](https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/3a4c3713-68d2-4ff7-a04d-9ba2d22be117)
+
+
 
 ## GitHub Use cases
 - We have made extensive use of GitHub Copilot.
@@ -49,7 +53,6 @@ ___
 
 <br>
 
-<!-- screenshots here -->
 
 
 
