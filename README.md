@@ -1,5 +1,5 @@
 
-# weather-forecasting-tool &nbsp; !
+# weather-forecasting-tool &nbsp;
 ## Introduction 
 A simple command line tool to get weather forecast for a given city. Made using object oriented programming in python, that shows current weather and weather forecast for next 5 days.
 ___
