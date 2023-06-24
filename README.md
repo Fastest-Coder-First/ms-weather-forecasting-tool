@@ -4,12 +4,12 @@
 A simple command line tool to get weather forecast for a given city. Made using object-oriented programming in Python, that shows current weather and weather forecast for today, tomorrow and next 5 days.
 ___
 ### Check Out:
-1. [DEMO VIDEO](#demo-video)
+1. [Demo Video](#demo-video)
 1. [Instructions](#instructions)
-2. [ARCHITECTURE DIAGRAM](#architecture-diagram)
-3. [GITHUB USECASES](#github-use-cases)
-5. [TECH STACK](#tech-stack)
-6. [TEAM](#made-with--by)
+2. [Architecture Diagram](#architecture-diagram)
+3. [Github Usecases](#github-use-cases)
+5. [Tech Stack](#tech-stack)
+6. [Team](#made-with--by)
 ___
 
 ## Demo Video
@@ -78,16 +78,6 @@ https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/630653
 - GitHub pull request
 - Merging PRs
 
-___
-## Demo Video
-
-<br>
-
-
-
-
-
-<br>
 
 ___
 ## Tech Stack
