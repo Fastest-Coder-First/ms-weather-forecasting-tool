@@ -12,19 +12,36 @@ ___
 6. [TEAM](#made-with--by)
 ___
 ## Instructions
-### EXECUTE IN YOUR MACHINE
+### SETUP IN YOUR MACHINE
 - Clone the repository:
     ```bash
     git clone https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool.git
     ```
 - Sign up on [OpenWeather](https://home.openweathermap.org/) to get your private API key.
 - Copy the default API key from the "API keys" tab.
-- Create a file named secrets.ini in the root folder of this clone project in your machine and add the api key copied on previous step instead of <YOUR-OPENWEATHER-API-KEY> 
+- Run the following commands in the terminal:
+- Create `./secrets.ini`
+  ```bash
+    cd ~/<path-to-the-root-folder-of-cloned-instance>
+    touch secrets.ini
+  ```
+- Open the `./secrets.ini` file in your preferred editor:
+  ```bash
+    vim secrets.ini
+  ```
+- Add the api key copied previously instead of <YOUR-OPENWEATHER-API-KEY> 
   ```bash
     [openweather]
     api_key=<YOUR-OPENWEATHER-API-KEY>
   ```
 <br>
+
+### EXECUTE 
+- cd into the project folder.
+  ```
+  cd <PATH_TO_YOUR_REPO>/
+  ```
+- Run `python3 main.py`
 
 ## Architecture Diagram
 
