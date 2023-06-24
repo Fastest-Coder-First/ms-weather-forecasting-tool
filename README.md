@@ -4,15 +4,21 @@
 A simple command line tool to get weather forecast for a given city. Made using object-oriented programming in Python, that shows current weather and weather forecast for today, tomorrow and next 5 days.
 ___
 ### Check Out:
-1. [EXECUTE IN YOUR MACHINE](#execute-in-your-machine)
+1. [DEMO VIDEO](#demo-video)
+1. [Instructions](#instructions)
 2. [ARCHITECTURE DIAGRAM](#architecture-diagram)
 3. [GITHUB USECASES](#github-use-cases)
-4. [DEMO VIDEO](#demo-video)
 5. [TECH STACK](#tech-stack)
 6. [TEAM](#made-with--by)
 ___
+
+## Demo Video
+
+https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/87ee92f6-23aa-44aa-b567-12fe18cd0200
+
+
 ## Instructions
-### SETUP IN YOUR MACHINE
+### SET-UP
 - Clone the repository:
     ```bash
     git clone https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool.git
@@ -22,36 +28,37 @@ ___
 - Run the following commands in the terminal:
 - Create `./secrets.ini`
   ```bash
-    cd ~/<path-to-the-root-folder-of-cloned-instance>
+    cd ~/<path-to-the-root-of-cloned-instance>
     touch secrets.ini
   ```
 - Open the `./secrets.ini` file in your preferred editor:
   ```bash
     vim secrets.ini
   ```
-- Add the api key copied previously instead of <YOUR-OPENWEATHER-API-KEY> 
+- Add the api key copied previously instead of `<YOUR-OPENWEATHER-API-KEY>`
   ```bash
     [openweather]
     api_key=<YOUR-OPENWEATHER-API-KEY>
   ```
 <br>
 
-### EXECUTE 
+### EXECUTE
 - cd into the project folder.
+  ```bash
+  cd ~/<path-to-the-root-of-cloned-instance>
   ```
-  cd <PATH_TO_YOUR_REPO>/
+- Run `./main.py`
+  ```bash
+    python3 main.py
   ```
-- Run `python3 main.py`
 
-## Architecture Diagram
+## Architecture Diagrams
 
+### Class Design
+![uml diagram](https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/1fe92616-5aa4-4392-a1b3-f02a0e526811)
+
+### Flow Diagram
 ![architecture diagram](https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/3a4c3713-68d2-4ff7-a04d-9ba2d22be117)
-
-## Demo Video
-
-
-
-https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/87ee92f6-23aa-44aa-b567-12fe18cd0200
 
 
 
