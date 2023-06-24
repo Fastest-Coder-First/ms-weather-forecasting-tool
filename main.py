@@ -121,31 +121,6 @@ class WeatherForecastingTool:
         return
 
 if __name__ == "__main__":
+    WeatherForecastingService.get_api_key()
     WeatherForecastingTool.start()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
