@@ -166,8 +166,10 @@ class WeatherForecastingTool:
                     invalid_city_name = True
                     while invalid_city_name:
                         city = input("Enter the city: ")
-                        if city.isalpha():
+                        if city.replace(" ", "").isalpha():
                             invalid_city_name = False
+                        else:
+                            print("Invalid city name.\nPlease enter again.")
 
                     weather_forecasting_tool.set_city(city)
                     weather_forecasting_tool._weather_forecasting_service.set_city(city)
