@@ -1,25 +1,50 @@
 from src import WeatherForecastingTool
 
-if __name__ == "__main__":
-    # build a command line tool to get the weather forecast for a given city
-    print("Welcome to the Weather Forecasting Tool!")
-    continueFlag = True
-    while continueFlag:
-        city = input("Please enter a city name: ")
-        weatherForecastingTool = WeatherForecastingTool()
-        weatherForecastingTool.getWeatherForecast(city)
-        # ask the user if they want to continue, accept 'y', 'Y', 'n', 'N' only
-        invalidChoice = True
-        while invalidChoice:
-            choice = input("Would you like to continue? (y/n): ")
-            if choice == 'y' or choice == 'Y':
-                invalidChoice = False
-            elif choice == 'n' or choice == 'N':
-                invalidChoice = False
-                continueFlag = False
-            else:
-                print("Invalid choice, please enter again.")
+class WeatherForecastingTool:
 
-    
-        
-    print("Thank you for using the Weather Forecasting Tool!")
+    def __init__(self) -> None:
+        self.city = None
+
+    def __init__(self, city) -> None:
+        self.city = city
+
+    def set_city(self, city) -> None:
+        self.city = city
+
+    def get_city(self) -> str:
+        return self.city
+
+    def print_menu(self) -> None:
+        # make a menu with the following options:
+        # 0. Change City (Current: )
+        # 1. Current Weather Forecast
+        # 2. Today's Weather Forecast
+        # 3. Tomorrow's Weather Forecast
+        # 4. 5 Day Weather Forecast
+        # 5. Exit
+
+        # ======================================================
+        # ~~~~~~~~~~~ || Weather Forecasting Tool || ~~~~~~~~~~~
+        # ------------------------------------------------------
+        # [00] Change City (Current: )
+        # [01] Current Weather Forecast
+        # [02] Today's Weather Forecast
+        # [03] Tomorrow's Weather Forecast
+        # [04] 5 Day Weather Forecast
+        # ------------------------------------------------------
+        # [-1] Exit
+        # ======================================================
+
+        continueFlag = True
+        while continueFlag:
+            pass
+        pass
+
+    @staticmethod
+    def start():
+        pass
+
+
+if __name__ == "__main__":
+    WeatherForecastingTool.start()
+
