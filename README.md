@@ -40,10 +40,10 @@ https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/630653
 
 ## GitHub Use cases
 - We have made extensive use of GitHub Copilot.
-    - base class structure
-    - get and set methods
-    - menu design
-    - comment completions
+    - To generate the base class structure
+    - To write getter and setter methods
+    - To design the menu for CLI
+    - For comment completions and documentation stuff.
 - GitHub GUI (Github Desktop)
 - GitHub teams
 - We have used all the following git commands:
