@@ -66,12 +66,14 @@ class WeatherForecastingTool:
         if self._check_error(data_dict):
             return
         
+        print("------------------------------------------------------")
         print("City: " + data_dict["name"])
         print("Current Time: " + datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
         print("Current Temperature: " + str(data_dict["main"]["temp"]) + "°F")
         print("Feels Like: " + str(data_dict["main"]["feels_like"]) + "°F")
         print("Weather: " + data_dict["weather"][0]["main"])
-        print("Weather Description: " + data_dict["weather"][0]["description"])
+        print("Weather Description: " + data_dict["weather"][0]["description"].title())
+        print("------------------------------------------------------")
 
         return
     
