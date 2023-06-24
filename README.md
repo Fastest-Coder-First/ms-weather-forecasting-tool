@@ -6,8 +6,8 @@ ___
 ### Check Out:
 1. [Demo Video](#demo-video)
 1. [Instructions](#instructions)
-2. [Architecture Diagram](#architecture-diagram)
-3. [Github Usecases](#github-use-cases)
+2. [Architecture Diagrams](#architecture-diagrams)
+3. [Github Copilot Usecases](#github-copilot-use-cases)
 5. [Tech Stack](#tech-stack)
 6. [Team](#made-with--by)
 ___
@@ -62,21 +62,30 @@ https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/630653
 
 
 
-## GitHub Use cases
+## GitHub Copilot use cases
 - We have made extensive use of GitHub Copilot.
     - To generate the base class structure
     - To write getter and setter methods
     - To design the menu for CLI
-    - For comment completions and documentation stuff.
+    - For comments
+    - Documentation Stuff
+    - To write the variable and method names following naming conventions
+
+## Other GitHub Uses :octocat:
 - GitHub GUI (Github Desktop)
 - GitHub teams
-- We have used all the following git commands:
+- We have done all the git operations on GitHub Desktop - the best GUI for Git:
     - git clone
     - git commit
     - git branch
     - git push
-- GitHub pull request
-- Merging PRs
+    - merging
+- We've also used GitHub web-app, for:
+    - making PRs
+    - merging PRs
+    - resolving conflicts
+ 
+> PS: Now this upgraded GitHub web-app UI is so better, that even after being developers, we wanted to try using the web-app and desktop-app instead of command line. Kudos to GitHub!
 
 
 ___
@@ -93,7 +102,8 @@ ___
 
 ## Made with 🤍 by:
 
-- Mudita Baid - [Mudita Baid](https://github.com/muditabaid)
+- MVP - [(click-to-see-who-😉)](https://github.com/features/copilot)
+- Mudita Baid - [muditabaid](https://github.com/muditabaid)
 - Yashvardhan Baid - [code-chaser](https://github.com/code-chaser)
 
 
