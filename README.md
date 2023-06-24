@@ -5,11 +5,11 @@ A simple command line tool to get weather forecast for a given city. Made using 
 ___
 ### Check Out:
 1. [EXECUTE IN YOUR MACHINE](#execute-in-your-machine)
-2. [SCREENSHOTS](#screenshots)
-3. [ARCHITECTURE DIAGRAM](#architure-diagram)
-4. [GITHUB USECASES](#github-usecases)
-3. [TECH STACK](#tech-stack)
-4. [TEAM](#made-with--by)
+2. [ARCHITECTURE DIAGRAM](#architure-diagram)
+3. [GITHUB USECASES](#github-usecases)
+4. [DEMO VIDEO](#demo-video)
+5. [TECH STACK](#tech-stack)
+6. [TEAM](#made-with--by)
 ___
 ## Instructions
 ### EXECUTE IN YOUR MACHINE
@@ -47,7 +47,7 @@ ___
 - Merging PRs
 
 ___
-## Screenshots
+## Demo Video
 
 <br>
 
