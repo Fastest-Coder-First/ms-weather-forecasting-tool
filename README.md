@@ -1,7 +1,7 @@
 
 # weather-forecasting-tool &nbsp;
 ## Introduction 
-A simple command line tool to get weather forecast for a given city. Made using object oriented programming in python, that shows current weather and weather forecast for next 5 days.
+A simple command line tool to get weather forecast for a given city. Made using object-oriented programming in Python, that shows current weather and weather forecast for next 5 days.
 ___
 ### Check Out:
 1. [EXECUTE IN YOUR MACHINE](#execute-in-your-machine)
@@ -19,31 +19,31 @@ ___
     ```
 - Sign up on [OpenWeather](https://home.openweathermap.org/) to get your private API key.
 - Copy the default API key from the "API keys" tab.
-- Create a file named secrets.ini in the root folder of this project and add the api key copied on previous step instead of <YOUR-OPENWEATHER-API-KEY>
+- Create a file named secrets.ini in the root folder of this clone project in your machine and add the api key copied on previous step instead of <YOUR-OPENWEATHER-API-KEY> 
   ```bash
     [openweather]
     api_key=<YOUR-OPENWEATHER-API-KEY>
   ```
 <br>
 
-## Architure Diagram
+## Architecture Diagram
 
-## Github Usecases
-- Github Organization
-- We have made an extensive use of Github Copilot.
+## Github Use cases
+- GitHub Organization
+- We have made extensive use of GitHub Copilot.
     - base class structure
     - get and set methods
     - menu design
     - comment completions
-- Github GUI (Github Desktop)
-- Github teams
-- Github import
+- GitHub GUI (Github Desktop)
+- GitHub teams
+- GitHub import
 - We have used all the following github commands:
     - git clone
     - git commit
     - git branch
     - git push
-- Github pull request
+- GitHub pull request
 - Merging PRs
 
 ___
