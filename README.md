@@ -60,7 +60,7 @@ https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/630653
 ### Flow Diagram
 ![architecture diagram](https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/3a4c3713-68d2-4ff7-a04d-9ba2d22be117)
 
-
+<br>
 
 ## GitHub Copilot use cases
 - We have made extensive use of GitHub Copilot.
