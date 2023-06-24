@@ -92,7 +92,7 @@ class WeatherForecastingTool:
             print("Time: " + datetime.fromtimestamp(data_dict["list"][i]["dt"]).strftime("%d/%m/%Y %H:%M:%S"))
             print("Temperature: " + str(data_dict["list"][i]["main"]["temp"]) + "°F")
             print("Weather: " + data_dict["list"][i]["weather"][0]["main"])
-            print("Weather Description: " + data_dict["list"][i]["weather"][0]["description"])
+            print("Weather Description: " + data_dict["list"][i]["weather"][0]["description"].title())
             print("------------------------------------------------------")
 
         return
@@ -112,7 +112,7 @@ class WeatherForecastingTool:
             print("Time: " + datetime.fromtimestamp(data_dict["list"][i+8]["dt"]).strftime("%d/%m/%Y %H:%M:%S"))
             print("Temperature: " + str(data_dict["list"][i+8]["main"]["temp"]) + "°F")
             print("Weather: " + data_dict["list"][i+8]["weather"][0]["main"])
-            print("Weather Description: " + data_dict["list"][i+8]["weather"][0]["description"])
+            print("Weather Description: " + data_dict["list"][i+8]["weather"][0]["description"].title())
             print("------------------------------------------------------")
 
         return
@@ -132,7 +132,7 @@ class WeatherForecastingTool:
             print("Time: " + datetime.fromtimestamp(data_dict["list"][i]["dt"]).strftime("%d/%m/%Y %H:%M:%S"))
             print("Temperature: " + str(data_dict["list"][i]["main"]["temp"]) + "°F")
             print("Weather: " + data_dict["list"][i]["weather"][0]["main"])
-            print("Weather Description: " + data_dict["list"][i]["weather"][0]["description"])
+            print("Weather Description: " + data_dict["list"][i]["weather"][0]["description"].title())
             print("------------------------------------------------------")
 
         return
