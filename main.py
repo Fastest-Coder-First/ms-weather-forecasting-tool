@@ -66,12 +66,14 @@ class WeatherForecastingTool:
         if self._check_error(data_dict):
             return
         
+        print("------------------------------------------------------")
         print("City: " + data_dict["name"])
         print("Current Time: " + datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
         print("Current Temperature: " + str(data_dict["main"]["temp"]) + "°F")
         print("Feels Like: " + str(data_dict["main"]["feels_like"]) + "°F")
         print("Weather: " + data_dict["weather"][0]["main"])
-        print("Weather Description: " + data_dict["weather"][0]["description"])
+        print("Weather Description: " + data_dict["weather"][0]["description"].title())
+        print("------------------------------------------------------")
 
         return
     
@@ -166,8 +168,10 @@ class WeatherForecastingTool:
                     invalid_city_name = True
                     while invalid_city_name:
                         city = input("Enter the city: ")
-                        if city.isalpha():
+                        if city.replace(" ", "").isalpha():
                             invalid_city_name = False
+                        else:
+                            print("Invalid city name.\nPlease enter again.")
 
                     weather_forecasting_tool.set_city(city)
                     weather_forecasting_tool._weather_forecasting_service.set_city(city)
