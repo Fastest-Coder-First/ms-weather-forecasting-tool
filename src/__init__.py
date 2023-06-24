@@ -1,1 +1,1 @@
-from .weatherForecastingTool import WeatherForecastingTool
+from .weather_forecasting_service import WeatherForecastingService
