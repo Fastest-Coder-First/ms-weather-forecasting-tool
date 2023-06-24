@@ -28,8 +28,7 @@ ___
 
 ## Architecture Diagram
 
-## Github Use cases
-- GitHub Organization
+## GitHub Use cases
 - We have made extensive use of GitHub Copilot.
     - base class structure
     - get and set methods
@@ -37,8 +36,7 @@ ___
     - comment completions
 - GitHub GUI (Github Desktop)
 - GitHub teams
-- GitHub import
-- We have used all the following github commands:
+- We have used all the following git commands:
     - git clone
     - git commit
     - git branch
