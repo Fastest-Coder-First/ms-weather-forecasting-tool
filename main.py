@@ -1,5 +1,6 @@
 from sys import platform
 import json
+import os
 
 from src import WeatherForecastingService
 
@@ -36,7 +37,7 @@ class WeatherForecastingTool:
         print("======================================================")
         print("~~~~~~~~~~~ || Weather Forecasting Tool || ~~~~~~~~~~~")
         print("------------------------------------------------------")
-        print("[00] Change City (Current: )")
+        print("[00] Change City (Current: " + self.city + ")")
         print("[01] Current Weather Forecast")
         print("[02] Today's Weather Forecast")
         print("[03] Tomorrow's Weather Forecast")
@@ -48,24 +49,25 @@ class WeatherForecastingTool:
         return
     
     def print_current(self, current_weather) -> None:
-        """Prints the current weather forecast
+        """Fetches and prints the current weather forecast
         """
         return
     
     def print_today(self, today_weather) -> None:
-        """Prints the today's weather forecast
+        """Fetches and prints the today's weather forecast
         """
         return
     
     def print_tomorrow(self, tomorrow_weather) -> None:
-        """Prints the tomorrow's weather forecast
+        """Fetches and prints the tomorrow's weather forecast
         """
         return
     
     def print_five_day(self, five_day_weather) -> None:
-        """Prints the 5 day weather forecast
+        """Fetches and prints the 5 day weather forecast
         """
         return
+    
 
     @staticmethod
     def start():
@@ -76,6 +78,13 @@ class WeatherForecastingTool:
         continue_flag = True
 
         while continue_flag:
+
+            # clear the screen
+            if platform == "win32":
+                os.system("cls")
+            else:
+                os.system("clear")
+
             # print the menu
             weather_forecasting_tool.print_menu()
 
@@ -89,16 +98,16 @@ class WeatherForecastingTool:
                     weather_forecasting_tool.set_city(city)
 
                 elif choice == 1:
-                    pass
+                    weather_forecasting_tool.print_current()
 
                 elif choice == 2:
-                    pass
+                    weather_forecasting_tool.print_today()
 
                 elif choice == 3:
-                    pass
+                    weather_forecasting_tool.print_tomorrow()
 
                 elif choice == 4:
-                    pass
+                    weather_forecasting_tool.print_five_day()
 
                 elif choice == -1:
                     continue_flag = False
@@ -106,7 +115,10 @@ class WeatherForecastingTool:
                 else:
                     print("Invalid choice. Please enter again.")
                     invalid_choice = True
-        pass
+            # end of while invalid_choice    
+        # end of while continue_flag
+
+        return
 
 if __name__ == "__main__":
     WeatherForecastingTool.start()
