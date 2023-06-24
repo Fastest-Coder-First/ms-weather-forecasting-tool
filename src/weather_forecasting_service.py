@@ -36,13 +36,35 @@ class WeatherForecastingService:
         return url
     
     def _get_api_key(self):
-        config = ConfigParser()
-        config.read("./secrets.ini")
-        return config["openweather"]["api_key"]
+        try:
+            config = ConfigParser()
+            config.read("./secrets.ini")
+            return config["openweather"]["api_key"]
+        except (FileNotFoundError, KeyError) as e:
+            # Handle file not found or key not found errors
+            print("Error retrieving API key:", str(e))
+            return None
+        except Exception as e:
+            # Handle other exceptions
+            print("An error occurred:", str(e))
+            return None
     
     def _get_weather_data(self, query_url):
-        response = requests.get(query_url)
-        return response.json()
+        try:
+            response = requests.get(query_url)
+            response.raise_for_status()
+            json_data = response.json()
+            
+            return json_data
+        except requests.exceptions.RequestException as e:
+            print("An error occurred while fetching weather data from API:", e)
+            return None
+        except requests.exceptions.HTTPError as e:
+            print("HTTP error occurred:", e)
+            return None
+        except ValueError as e:
+            print("An error occurred while parsing the JSON response:", e)
+            return None
 
     def getCurrent(self):
         type = "weather"
