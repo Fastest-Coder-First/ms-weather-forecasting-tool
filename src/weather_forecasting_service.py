@@ -25,6 +25,13 @@ class WeatherForecastingService:
     # Constructor - sets the default city to Bangalore
     def __init__(self):
         """Constructor - sets the default city to Bangalore
+
+        Args:
+            None
+
+        Returns:
+            None
+
         """
         self._city = "Bangalore"
 
@@ -32,6 +39,13 @@ class WeatherForecastingService:
     # Setter method for _city
     def set_city(self, city) -> None:
         """Sets the city to be used for the weather forecasting tool
+
+        Args:
+            city (str): Name of the city to be used for the weather forecasting tool
+
+        Returns:
+            None
+
         """
         self._city = city
         return
@@ -40,12 +54,29 @@ class WeatherForecastingService:
     # Getter method for _city
     def get_city(self) -> str:
         """Returns the currently set city
+
+        Args:
+            None
+
+        Returns:
+            str: Name of the currently set city
+
         """
         return self._city
 
     # ---------------------------
     # Builds the query URL for the API
     def _build_query(self, type) -> str:
+        """Builds the query URL for the API
+
+        Args:
+            type (str): Type of query to be made to the API
+
+        Returns:
+            str: Query URL for the API
+
+        """
+
         api_key = self._get_api_key()
         url_encoded_city_name = self._city.replace(" ", "+")
         units = ""
@@ -58,6 +89,15 @@ class WeatherForecastingService:
     # ---------------------------
     # Fetches the API key from the secrets.ini file
     def _get_api_key(self):
+        """Fetches the API key from the secrets.ini file
+
+        Args:
+            None
+        
+        Returns:
+            str: API key for the OpenWeatherMap API
+        
+        """
         try:
             config = ConfigParser()
             config.read("./secrets.ini")
