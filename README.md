@@ -105,6 +105,7 @@ ___
     - Generating docstrings
     - Error Handling
  
+___
 
 <details><summary><h3> We and Copilot in the field </h3> (click to expand)</summary>
 
@@ -121,6 +122,7 @@ ___
 </details>
 
 ___
+
 
 ## Other GitHub Uses :octocat:
 - First and foremost, easy collaboration 🤓
