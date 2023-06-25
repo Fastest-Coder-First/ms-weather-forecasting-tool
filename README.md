@@ -122,7 +122,7 @@ ___
 
 ## Made with 🤍 by:
 
-- MVP - [(click-to-see-who-😉)](https://github.com/features/copilot)
+- The MVP - [(click-to-see-who-😉)](https://github.com/features/copilot)
 - Mudita Baid - [muditabaid](https://github.com/muditabaid)
 - Yashvardhan Baid - [code-chaser](https://github.com/code-chaser)
 
