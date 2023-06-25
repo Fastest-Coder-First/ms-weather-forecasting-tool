@@ -1,5 +1,5 @@
 
-# weather-forecasting-tool &nbsp; ![Generic badge](https://img.shields.io/badge/Python-Project-red.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/blob/main/LICENSE) [![Generic badge](https://img.shields.io/badge/See-Team-blue.svg)](#made-with--by) [![Forks: Count](https://img.shields.io/github/forks/code-chaser/hotel-management-system?color=purple&label=Forks)](https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/network/members)
+# weather-forecasting-tool &nbsp; ![Generic badge](https://img.shields.io/badge/Python-Project-red.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/blob/main/LICENSE) [![Generic badge](https://img.shields.io/badge/See-Team-blue.svg)](#made-with--by) [![Forks: Count](https://img.shields.io/github/forks/Fastest-Coder-First/ms-weather-forecasting-tool?color=purple&label=Forks)](https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/network/members)
 ## Introduction 
 A simple command line tool to get weather forecast for a given city. Made using object-oriented programming in Python, that shows current weather and weather forecast for today, tomorrow and next 5 days.
 ___
