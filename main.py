@@ -7,9 +7,13 @@ from src import WeatherForecastingService
 
 class WeatherForecastingTool:
 
+    # ---------------------------
+
     def __init__(self) -> None:
         self._city = "Bangalore"
         self._weather_forecasting_service = WeatherForecastingService()
+
+    # ---------------------------
 
     def set_city(self, city) -> None:
         """Sets the city to be used for the weather forecasting tool
@@ -18,14 +22,19 @@ class WeatherForecastingTool:
         self._weather_forecasting_service.set_city(city)
         return
 
+    # ---------------------------
+
     def get_city(self) -> str:
         """Returns the currently set city
         """
         return self._city
 
+    # ---------------------------
+
     def _print_menu(self) -> None:
         """Prints the menu for the Weather Forecasting Tool
         """
+        # Co-pilot prompt
         # make a menu with the following options:
         # 0. Change City (Current: )
         # 1. Current Weather Forecast
@@ -47,6 +56,8 @@ class WeatherForecastingTool:
         print("======================================================")
 
         return
+
+    # ---------------------------
     
     def _check_error(self, data_dict) -> bool:
         """Checks if the data_dict has any error
@@ -57,6 +68,8 @@ class WeatherForecastingTool:
             print("Error Message: " + str(data_dict["message"]))
             return True
         return False
+
+    # ---------------------------
     
     def _print_current(self) -> None:
         """Fetches and prints the current weather forecast
@@ -76,6 +89,8 @@ class WeatherForecastingTool:
         print("------------------------------------------------------")
 
         return
+
+    # ---------------------------
     
     def _print_today(self) -> None:
         """Fetches and prints the today's weather forecast (3 hour interval)
@@ -89,6 +104,7 @@ class WeatherForecastingTool:
 
         for i in range(cnt):
             print("------------------------------------------------------")
+            print("City: " + data_dict["city"]["name"])
             print("Time: " + datetime.fromtimestamp(data_dict["list"][i]["dt"]).strftime("%d/%m/%Y %H:%M:%S"))
             print("Temperature: " + str(data_dict["list"][i]["main"]["temp"]) + "°F")
             print("Weather: " + data_dict["list"][i]["weather"][0]["main"])
@@ -96,6 +112,8 @@ class WeatherForecastingTool:
             print("------------------------------------------------------")
 
         return
+
+    # ---------------------------
     
     def _print_tomorrow(self) -> None:
         """Fetches and prints the tomorrow's weather forecast
@@ -109,6 +127,7 @@ class WeatherForecastingTool:
 
         for i in range(cnt):
             print("------------------------------------------------------")
+            print("City: " + data_dict["city"]["name"])
             print("Time: " + datetime.fromtimestamp(data_dict["list"][i+8]["dt"]).strftime("%d/%m/%Y %H:%M:%S"))
             print("Temperature: " + str(data_dict["list"][i+8]["main"]["temp"]) + "°F")
             print("Weather: " + data_dict["list"][i+8]["weather"][0]["main"])
@@ -116,6 +135,8 @@ class WeatherForecastingTool:
             print("------------------------------------------------------")
 
         return
+
+    # ---------------------------
     
     def _print_five_day(self) -> None:
         """Fetches and prints the 5 day weather forecast
@@ -129,6 +150,7 @@ class WeatherForecastingTool:
 
         for i in range(cnt):
             print("------------------------------------------------------")
+            print("City: " + data_dict["city"]["name"])
             print("Time: " + datetime.fromtimestamp(data_dict["list"][i]["dt"]).strftime("%d/%m/%Y %H:%M:%S"))
             print("Temperature: " + str(data_dict["list"][i]["main"]["temp"]) + "°F")
             print("Weather: " + data_dict["list"][i]["weather"][0]["main"])
@@ -136,7 +158,8 @@ class WeatherForecastingTool:
             print("------------------------------------------------------")
 
         return
-    
+
+    # ---------------------------
 
     @staticmethod
     def start():
@@ -202,6 +225,9 @@ class WeatherForecastingTool:
         # end of while continue_flag
 
         return
+
+    # ---------------------------
+# -------------------------------
 
 if __name__ == "__main__":
     WeatherForecastingTool.start()
