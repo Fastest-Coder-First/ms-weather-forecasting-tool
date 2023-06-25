@@ -56,7 +56,7 @@ ___
     api_key=<YOUR-OPENWEATHER-API-KEY>
   ```
   
-<br>
+___
 
 ### EXECUTE
 - Go to the root folder of cloned repository:
