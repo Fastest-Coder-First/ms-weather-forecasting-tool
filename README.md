@@ -141,6 +141,10 @@ ___
     - merging PR's
     - resolving conflicts
     - merging PR's
+      
+- Some Miscellaneous:
+    - GitHub Sponsors
+    - Branch Protection Rules
 
 ___
 
