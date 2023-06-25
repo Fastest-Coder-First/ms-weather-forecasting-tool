@@ -96,9 +96,11 @@ class WeatherForecastingTool:
 
         """
         if str(data_dict["cod"]) != "200":
-            print("Some error occurred.\nPlease check the error message below:")
+            print("------------------------ERROR-------------------------")
+            print("Please check the error message below:")
             print("Error Code: " + str(data_dict["cod"]))
             print("Error Message: " + str(data_dict["message"]))
+            print("------------------------------------------------------")
             return True
         
         return False
@@ -123,8 +125,8 @@ class WeatherForecastingTool:
         print("------------------------------------------------------")
         print("City: " + data_dict["name"])
         print("Current Time: " + datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
-        print("Current Temperature: " + str(data_dict["main"]["temp"]) + "°F")
-        print("Feels Like: " + str(data_dict["main"]["feels_like"]) + "°F")
+        print("Current Temperature: " + str(data_dict["main"]["temp"]) + " °C")
+        print("Feels Like: " + str(data_dict["main"]["feels_like"]) + " °C")
         print("Weather: " + data_dict["weather"][0]["main"])
         print("Weather Description: " + data_dict["weather"][0]["description"].title())
         print("------------------------------------------------------")
@@ -156,7 +158,7 @@ class WeatherForecastingTool:
         for i in range(cnt):
             print("------------------------------------------------------")
             print("Time: " + datetime.fromtimestamp(data_dict["list"][i]["dt"]).strftime("%d/%m/%Y %H:%M:%S"))
-            print("Temperature: " + str(data_dict["list"][i]["main"]["temp"]) + "°F")
+            print("Temperature: " + str(data_dict["list"][i]["main"]["temp"]) + " °C")
             print("Weather: " + data_dict["list"][i]["weather"][0]["main"])
             print("Weather Description: " + data_dict["list"][i]["weather"][0]["description"].title())
 
@@ -189,7 +191,7 @@ class WeatherForecastingTool:
         for i in range(cnt):
             print("------------------------------------------------------")
             print("Time: " + datetime.fromtimestamp(data_dict["list"][i+8]["dt"]).strftime("%d/%m/%Y %H:%M:%S"))
-            print("Temperature: " + str(data_dict["list"][i+8]["main"]["temp"]) + "°F")
+            print("Temperature: " + str(data_dict["list"][i+8]["main"]["temp"]) + " °C")
             print("Weather: " + data_dict["list"][i+8]["weather"][0]["main"])
             print("Weather Description: " + data_dict["list"][i+8]["weather"][0]["description"].title())
 
@@ -222,7 +224,7 @@ class WeatherForecastingTool:
         for i in range(cnt):
             print("------------------------------------------------------")
             print("Time: " + datetime.fromtimestamp(data_dict["list"][i]["dt"]).strftime("%d/%m/%Y %H:%M:%S"))
-            print("Temperature: " + str(data_dict["list"][i]["main"]["temp"]) + "°F")
+            print("Temperature: " + str(data_dict["list"][i]["main"]["temp"]) + " °C")
             print("Weather: " + data_dict["list"][i]["weather"][0]["main"])
             print("Weather Description: " + data_dict["list"][i]["weather"][0]["description"].title())
 

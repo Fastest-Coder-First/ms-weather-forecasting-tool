@@ -79,7 +79,7 @@ class WeatherForecastingService:
 
         api_key = self._get_api_key()
         url_encoded_city_name = self._city.replace(" ", "+")
-        units = ""
+        units = "metric"
         url = (
             f"{self._api_base_url}/{type}?q={url_encoded_city_name}"
             f"&units={units}&appid={api_key}"
@@ -114,22 +114,20 @@ class WeatherForecastingService:
     # ---------------------------
     # Fetches the weather data from the API
     def _get_weather_data(self, query_url):
+        """Fetches the weather data from the API
+
+        Args:
+            query_url (str): Query URL for the API
+
+        Returns:
+            dict: Weather data fetched from the API
+
+        """
+
         try:
             response = requests.get(query_url)
-            response.raise_for_status()
             json_data = response.json()
-            
             return json_data
-
-        # Handle request exceptions
-        except requests.exceptions.RequestException as e:
-            print("An error occurred while fetching weather data from API: ", e)
-            raise e
-        
-        # Handle HTTP Errors
-        except requests.exceptions.HTTPError as e:
-            print("HTTP error occurred:", e)
-            raise e
 
         # Handle ValueErrors while parsing JSON object
         except ValueError as e:
@@ -140,36 +138,64 @@ class WeatherForecastingService:
     # returns the current weather forecast dict for the set city
     def getCurrent(self):
         """Returns the current weather forecast dict for the set city
+
+        Args:
+            None
+
+        Returns:
+            dict: Current weather forecast dict for the set city
+
         """
         type = self.QueryType.CURRENT
         url = self._build_query(type)
         json = self._get_weather_data(url)
         return json
-        
+    
     # ---------------------------
-
+    # returns the weather forecast dict for today for the set city
     def getToday(self):
-        """Returns the today's weather forecast dict for the set city
+        """Returns the weather forecast dict for today for the set city
+
+        Args:
+            None
+
+        Returns:
+            dict: Weather forecast dict for today for the set city
+        
         """
         type = self.QueryType.TODAY
         url = self._build_query(type)
         json = self._get_weather_data(url)
         return json
-
+    
     # ---------------------------
-
+    # returns the weather forecast dict for tomorrow for the set city
     def getTomorrow(self):
-        """Returns the tomorrow's weather forecast dict for the set city
+        """Returns the weather forecast dict for tomorrow for the set city
+
+        Args:
+            None
+
+        Returns:
+            dict: Weather forecast dict for tomorrow for the set city
+
         """
         type = self.QueryType.TOMORROW
         url = self._build_query(type)
         json = self._get_weather_data(url)
         return json
-
+    
     # ---------------------------
-
+    # returns the weather forecast dict for the next 5 days for the set city
     def getFiveDay(self):
-        """Returns the 5 day weather forecast dict for the set city
+        """Returns the weather forecast dict for the next 5 days for the set city
+
+        Args:
+            None
+
+        Returns:
+            dict: Weather forecast dict for the next 5 days for the set city
+
         """
         type = self.QueryType.FIVE_DAY
         url = self._build_query(type)
