@@ -146,7 +146,7 @@ ___
     - git push
     - git pull
       
-- and some of them on GitHub web-app, for:
+- and some of them on GitHub web-app, like:
     - making PR's
     - merging PR's
     - resolving conflicts
