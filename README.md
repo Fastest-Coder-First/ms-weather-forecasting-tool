@@ -17,6 +17,7 @@ ___
 
 https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/87ee92f6-23aa-44aa-b567-12fe18cd0200
 
+___
 
 ## Instructions
 ### SET-UP
@@ -41,6 +42,7 @@ https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/630653
     [openweather]
     api_key=<YOUR-OPENWEATHER-API-KEY>
   ```
+  
 <br>
 
 ### EXECUTE
@@ -53,6 +55,8 @@ https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/630653
     python3 main.py
   ```
 
+___
+
 ## Architecture Diagrams
 
 ### Class Design
@@ -60,6 +64,8 @@ https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/630653
 
 ### Flow Diagram
 ![architecture diagram](https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/3a4c3713-68d2-4ff7-a04d-9ba2d22be117)
+
+___
 
 <br>
 
@@ -90,15 +96,16 @@ https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/630653
 
 
 ___
+
+<br>
+
 ## Tech Stack
 - Python
 
 
-<br>
-
 ___
 
-
+<br>
 
 
 ## Made with 🤍 by:
@@ -108,7 +115,6 @@ ___
 - Yashvardhan Baid - [code-chaser](https://github.com/code-chaser)
 
 
-<br>
 
 ___
 > #### _*Hope you like it!*_
