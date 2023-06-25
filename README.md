@@ -25,23 +25,32 @@ ___
 
 ## Instructions
 ### SET-UP
+- Insstall the prerequisites (links attached):
+    - [Python 3.xx](https://www.python.org/downloads/)
+    - [Git 2.39.2](https://git-scm.com/downloads)
 - Clone the repository:
-    ```bash
+  ```git
     git clone https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool.git
-    ```
-- Sign up on [OpenWeather](https://home.openweathermap.org/) to get your private API key.
-- Copy the default API key from the "API keys" tab.
-- Run the following commands in the terminal:
-- Create `./secrets.ini`
+  ```
+- Install dependencies:
   ```bash
-    cd ~/<path-to-the-root-of-cloned-instance>
+    cd ~/<path-to-the-root-folder-of-repository>
+    pip install -r requirements.txt
+  ```
+- For using API, you need the API key.
+    - Sign up on [OpenWeather](https://home.openweathermap.org/) to get your private API key.
+    - Copy the default API key from the "API keys" tab.
+      
+    - Create `./secrets.ini`
+  ```bash
+    cd ~/<path-to-the-root-folder-of-repository>
     touch secrets.ini
   ```
-- Open the `./secrets.ini` file in your preferred editor:
+    - Open the `./secrets.ini` file in your preferred editor:
   ```bash
     vim secrets.ini
   ```
-- Add the api key copied previously instead of `<YOUR-OPENWEATHER-API-KEY>`
+    - Add the following text into the file (replace `<YOUR-OPENWEATHER-API-KEY>` with your own API Key):
   ```bash
     [openweather]
     api_key=<YOUR-OPENWEATHER-API-KEY>
@@ -50,9 +59,9 @@ ___
 <br>
 
 ### EXECUTE
-- cd into the project folder.
+- Go to the root folder of cloned repository:
   ```bash
-  cd ~/<path-to-the-root-of-cloned-instance>
+    cd ~/<path-to-the-root-folder-of-repository>
   ```
 - Run `./main.py`
   ```bash
@@ -98,18 +107,17 @@ ___
  
 > PS: Now this upgraded GitHub web and desktop UI is so much better, that even after being developers, we wanted to try using the GitHub web and desktop versions instead of command line for git operations. And it was really convenient. Kudos to GitHub!
 
-
 ___
-
-<br>
 
 ## Tech Stack
 - Python
 
-
 ___
 
-<br>
+## Dependencies
+- [requests 2.31.0](https://pypi.org/project/requests/)
+- [DateTime 5.1](https://pypi.org/project/DateTime/)
+___
 
 
 ## Made with 🤍 by:
