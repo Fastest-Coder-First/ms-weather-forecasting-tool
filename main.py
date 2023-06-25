@@ -4,43 +4,70 @@ from sys import platform        # for fetching OS information
 
 from src import WeatherForecastingService
 
+# -------------------------------
+# this class handles all interactions of the tool with the user
 class WeatherForecastingTool:
+    """This class handles all interactions of the tool with the user
+    """
 
     # ---------------------------
-
+    # constructor - sets the default city to Bangalore
+    #               and creates a WeatherForecastingService object
     def __init__(self) -> None:
+        """Constructor - sets the default city to Bangalore
+                        and creates a WeatherForecastingService object
+        Args:
+            None
+
+        Returns:
+            None
+
+        """
         self._city = "Bangalore"
         self._weather_forecasting_service = WeatherForecastingService()
 
     # ---------------------------
-
+    # setter method for _city
     def set_city(self, city) -> None:
         """Sets the city to be used for the weather forecasting tool
+
+        Args:
+            city (str): the city to be used for the weather forecasting tool
+
+        Returns:
+            None
+
         """
         self._city = city
         self._weather_forecasting_service.set_city(city)
         return
 
     # ---------------------------
-
+    # getter method for _city
     def get_city(self) -> str:
         """Returns the currently set city
+
+        Args:
+            None
+
+        Returns:
+            str: the currently set city
+
         """
         return self._city
 
     # ---------------------------
-
+    # prints the menu for the Weather Forecasting Tool - only prints
     def _print_menu(self) -> None:
         """Prints the menu for the Weather Forecasting Tool
+
+        Args:
+            None
+
+        Returns:
+            None
+
         """
-        # Co-pilot prompt
-        # make a menu with the following options:
-        # 0. Change City (Current: )
-        # 1. Current Weather Forecast
-        # 2. Today's Weather Forecast
-        # 3. Tomorrow's Weather Forecast
-        # 4. 5 Day Weather Forecast
-        # 5. Exit
 
         print("======================================================")
         print("~~~~~~~~~~~ || Weather Forecasting Tool || ~~~~~~~~~~~")
@@ -57,21 +84,36 @@ class WeatherForecastingTool:
         return
 
     # ---------------------------
-    
+    # checks for Request Errors in data_dict
     def _check_error(self, data_dict) -> bool:
-        """Checks if the data_dict has any error
+        """Checks for Request Errors in data_dict
+
+        Args:
+            data_dict (dict): the dictionary to be checked for Request Errors
+        
+        Returns:
+            bool: True if Request Error is present, False otherwise
+
         """
         if str(data_dict["cod"]) != "200":
             print("Some error occurred.\nPlease check the error message below:")
             print("Error Code: " + str(data_dict["cod"]))
             print("Error Message: " + str(data_dict["message"]))
             return True
+        
         return False
 
     # ---------------------------
-    
+    # fetches and prints the current weather forecast
     def _print_current(self) -> None:
         """Fetches and prints the current weather forecast
+
+        Args:
+            None
+
+        Returns:
+            None
+
         """
         data_dict = self._weather_forecasting_service.getCurrent()
 
@@ -90,9 +132,16 @@ class WeatherForecastingTool:
         return
 
     # ---------------------------
-    
+    # fetches and prints the today's weather forecast (3 hour interval)
     def _print_today(self) -> None:
         """Fetches and prints the today's weather forecast (3 hour interval)
+
+        Args:
+            None
+
+        Returns:
+            None
+
         """
         data_dict = self._weather_forecasting_service.getToday()
 
@@ -112,13 +161,20 @@ class WeatherForecastingTool:
             print("Weather Description: " + data_dict["list"][i]["weather"][0]["description"].title())
 
         print("------------------------------------------------------")
-        
+
         return
 
     # ---------------------------
-    
+    # fetches and prints the tomorrow's weather forecast (3 hour interval)
     def _print_tomorrow(self) -> None:
         """Fetches and prints the tomorrow's weather forecast
+
+        Args:
+            None
+
+        Returns:
+            None
+
         """
         data_dict = self._weather_forecasting_service.getTomorrow()
 
@@ -142,9 +198,16 @@ class WeatherForecastingTool:
         return
 
     # ---------------------------
-    
+    # fetches and prints the 5 day weather forecast (3 hour interval)
     def _print_five_day(self) -> None:
         """Fetches and prints the 5 day weather forecast
+
+        Args:
+            None
+
+        Returns:
+            None
+
         """
         data_dict = self._weather_forecasting_service.getFiveDay()
 
@@ -168,10 +231,17 @@ class WeatherForecastingTool:
         return
 
     # ---------------------------
-
+    # starts the Weather Forecasting Tool
     @staticmethod
     def start():
         """Starts the Weather Forecasting Tool
+
+        Args:
+            None
+
+        Returns:
+            None
+
         """
         # create a WeatherForecastingTool object
         weather_forecasting_tool = WeatherForecastingTool()
@@ -241,4 +311,3 @@ class WeatherForecastingTool:
 
 if __name__ == "__main__":
     WeatherForecastingTool.start()
-    
