@@ -13,9 +13,11 @@ ___
 6. [Team](#made-with--by)
 ___
 
+
 <details><summary><h2>Demo Video</h2> (click to expand)</summary>
 
-https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/2274af5f-0b65-48f3-9663-add984e8c7e1
+https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/0d977c60-a9f9-4e5f-a4f8-ab7b80a3cef5
+
 </details>
 
 <!-- https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/87ee92f6-23aa-44aa-b567-12fe18cd0200 -->
@@ -109,9 +111,15 @@ ___
 
 <details><summary><h3> We and Copilot in the field </h3> (click to expand)</summary>
 
-https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/cb149232-0275-49d5-becb-3b5063fdef53
 
-https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/530d8bf2-524f-4120-8730-4da50304bcce
+
+https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/2d82be09-6d7d-4889-a4ea-88b0f8c4aa05
+
+
+
+https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/1bf741da-31f3-410e-96b4-3453038350f3
+
+
 
 
 So, just like that, GitHub Copilot helped us accelerate our coding part and helped us complete in time. Be it writing docstrings, handling errors or anyhing, it'll generate the code for you just the way you like it, by reading your code files themselves.
