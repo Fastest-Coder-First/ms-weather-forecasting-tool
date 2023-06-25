@@ -90,8 +90,21 @@ ___
     - For comments
     - Documentation Stuff
     - To write the variable and method names following naming conventions
+    - Generating docstrings
+    - Error Handling
+ 
+- Some video demonstrations
+
+https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/cb149232-0275-49d5-becb-3b5063fdef53
+
+https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/530d8bf2-524f-4120-8730-4da50304bcce
+
+So, just like that, copilot helped us accelerate our coding part and helped us complete in time. Be it writing docstrings, handling errors or anyhing, it'll generate the code for you just the way you like it, by reading your codefiles themselves.
+
+
 
 ## Other GitHub Uses :octocat:
+- First and foremost, easy collaboration 🤓
 - GitHub GUI (Github Desktop)
 - GitHub teams
 - We have done all the git operations on GitHub Desktop - the best GUI for Git:
