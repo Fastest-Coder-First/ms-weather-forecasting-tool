@@ -66,6 +66,7 @@ class WeatherForecastingTool:
             print("Error Code: " + str(data_dict["cod"]))
             print("Error Message: " + str(data_dict["message"]))
             return True
+        
         return False
 
     # ---------------------------
@@ -112,7 +113,7 @@ class WeatherForecastingTool:
             print("Weather Description: " + data_dict["list"][i]["weather"][0]["description"].title())
 
         print("------------------------------------------------------")
-        
+
         return
 
     # ---------------------------
@@ -241,4 +242,3 @@ class WeatherForecastingTool:
 
 if __name__ == "__main__":
     WeatherForecastingTool.start()
-    
