@@ -80,15 +80,16 @@ ___
 
 
 <details><summary><h3> Class Design </h3> (click to expand)</summary>
-    
-![uml diagram](https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/1fe92616-5aa4-4392-a1b3-f02a0e526811)
+
+![uml](https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/49fc4577-a5cb-4b55-8d18-c7265d079287)
+
 
 </details>
 
 
 <details><summary><h3> Workflow Diagram </h3> (click to expand)</summary>
     
-![architecture diagram](https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/3a4c3713-68d2-4ff7-a04d-9ba2d22be117)
+![workflow diagram](https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/4289abaf-8fd3-4b79-9eda-4bb0d1494ca8)
 
 </details>
 
