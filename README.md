@@ -115,11 +115,12 @@ https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/630653
 
 So, just like that, GitHub Copilot helped us accelerate our coding part and helped us complete in time. Be it writing docstrings, handling errors or anyhing, it'll generate the code for you just the way you like it, by reading your code files themselves.
 ___
-> I've been using GitHub Copilot since its launch. I was really excited and curious when it was announced (back in 2021). After the launch, it has been an inseparable part of my coding journey. I just love it! It's just... (no words!). Thanks, GitHub!
 
+> I've been using GitHub Copilot since its launch. I was really excited and curious when it was announced (back in 2021). After the launch, it has been an inseparable part of my coding journey. I just love it! It's just... (no words!). Thanks, GitHub!
 
 </details>
 
+___
 
 ## Other GitHub Uses :octocat:
 - First and foremost, easy collaboration 🤓
