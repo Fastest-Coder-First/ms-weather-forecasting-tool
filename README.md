@@ -19,6 +19,10 @@ ___
 
 
 
+https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/267122b4-37b2-4d6a-9198-ac06d8e1c07e
+
+
+
 </details>
 
 <!-- https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/0d977c60-a9f9-4e5f-a4f8-ab7b80a3cef5 -->
@@ -116,6 +120,12 @@ ___
 <details><summary><h3> We and Copilot in the field </h3> (click to expand)</summary>
 
 
+
+https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/3fe2466f-474a-435f-b765-24977c1ca139
+
+
+
+https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/4f8816da-99e4-444b-9efd-7c6136f0d081
 
 
 
