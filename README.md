@@ -16,10 +16,12 @@ ___
 
 <details><summary><h2>Demo Video</h2> (click to expand)</summary>
 
-https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/0d977c60-a9f9-4e5f-a4f8-ab7b80a3cef5
+
+
 
 </details>
 
+<!-- https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/0d977c60-a9f9-4e5f-a4f8-ab7b80a3cef5 -->
 <!-- https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/87ee92f6-23aa-44aa-b567-12fe18cd0200 -->
 
 ___
@@ -115,11 +117,15 @@ ___
 
 
 
-https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/2d82be09-6d7d-4889-a4ea-88b0f8c4aa05
 
 
 
-https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/1bf741da-31f3-410e-96b4-3453038350f3
+
+<!-- https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/2d82be09-6d7d-4889-a4ea-88b0f8c4aa05
+
+
+
+https://github.com/Fastest-Coder-First/ms-weather-forecasting-tool/assets/63065397/1bf741da-31f3-410e-96b4-3453038350f3 -->
 
 
 
